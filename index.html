@@ -20,9 +20,8 @@
 	</style>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
-	<!--<script src="jquery.js"></script>-->
 	<script>
-		var new_num = 5; // global variable
+	var new_num = 5; // global variable
 jQuery(document).ready(function(){ 
 
 $(document).ready(function(){
@@ -85,12 +84,14 @@ $(document).ready(function(){
       return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
     });
   });
+
   $("#btn2").click(function(){
     $("#test2").html(function(i, origText){
       return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
     });
   });
 });
+
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
@@ -107,6 +108,7 @@ $(document).ready(function(){
 
   
 });
+
 	</script>
 
 
